@@ -6,9 +6,9 @@ import lodash, { throttle } from 'lodash';
 
 player.on('timeupdate', throttle(setVideoTime, 1000))
      function setVideoTime() {
-        console.log('played the video!');
+        // console.log('played the video!');
         player.getCurrentTime().then(function(seconds) {
-        console.log(seconds);
+        // console.log(seconds);
         localStorage.setItem("videoplayer-current-time", seconds);
         })
     };

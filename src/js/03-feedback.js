@@ -33,11 +33,13 @@ function onTextareaInput(event) {
 }
 
 function populateTextarea() {
-    
+    let savedForm = {};
+
     
     if (obj) {
         message.value = obj.message;
         email.value = obj.email;
+        // console.log(obj);
     };
 }
 

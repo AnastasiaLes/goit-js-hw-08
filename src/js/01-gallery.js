@@ -6,7 +6,7 @@ import styles from 'simplelightbox/dist/simple-lightbox.min.css';
 import SimpleLightbox from 'simplelightbox';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 const gallery = document.querySelector('.gallery');
 
 const galleryMarkup = galleryItems.map(({preview, description, original})=> 
@@ -15,7 +15,7 @@ const galleryMarkup = galleryItems.map(({preview, description, original})=>
 </a>`
 ).join('');
 
-console.log(galleryMarkup);
+// console.log(galleryMarkup);
 
 gallery.insertAdjacentHTML('beforeend', galleryMarkup);
 
@@ -27,7 +27,7 @@ function onImageClick(event) {
         return;
     }
     
-    console.log('Yes)')
+    // console.log('Yes)')
     const modal = new SimpleLightbox('.gallery a', {
         captionsData: 'alt',
         captionDelay: '250'
